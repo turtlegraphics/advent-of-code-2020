@@ -2,7 +2,7 @@
 # Advent of Code 2019
 # Bryan Clair
 #
-# Day --
+# Day 02
 #
 import sys
 sys.path.append("..")
