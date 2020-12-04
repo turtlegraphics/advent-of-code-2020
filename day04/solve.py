@@ -29,7 +29,7 @@ for line in passtxt:
     p = Passport(fields)
     if p.valid():
         count += 1
-    if args.verbose:
+    if args.verbose > 1:
         print p
 
 print
