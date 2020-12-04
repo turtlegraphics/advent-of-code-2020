@@ -2,6 +2,11 @@
 # passport class
 #
 
+#
+# input validators
+#
+# All accept a string, and return parsed validated input or None
+#
 def byr_v(x):
     try:
         y = int(x)
@@ -88,6 +93,10 @@ validators = {
 
 class Passport:
     def __init__(self, fields):
+        """
+        Create a passport from a dictionary of fields.
+        In the fields dictionary, all fields are strings, may not be valid.
+        """
         for f,v in fields.items():
             try:
                 setattr(self, f, validators[f](v))
@@ -101,8 +110,10 @@ class Passport:
             try:
                 v = getattr(self, f)
             except AttributeError:
+                # missing field
                 return False
             if v == None:
+                # invalid field
                 return False
         return True
 
@@ -112,12 +123,12 @@ class Passport:
             out += k + ':' + str(v)+ '\n'
         out += '---------\n'
         out += 'VALID' if self.valid() else 'INVALID'
-        out += '\n---------\n'
+        out += '\n---------'
         return out
 
 if __name__ == '__main__':
 
-    p_data = [
+    p_test_data = [
         [{'cid': '147', 'byr': '1937', 'hgt': '183cm',
          'ecl': 'gry', 'pid': '860033327', 'eyr': '2020',
          'iyr': '2017', 'hcl': '#fffffd'},True],
@@ -130,7 +141,10 @@ if __name__ == '__main__':
          'byr': '1931', 'eyr': '2024', 'iyr': '2013', 'hcl': '#ae17e1'},False]
         ]
 
-    for data,valid in p_data:
+    for data,valid in p_test_data:
         p = Passport(data)
         print p
+        print '(country',p.cid,')'
+        print
+
         assert(p.valid() == valid)
