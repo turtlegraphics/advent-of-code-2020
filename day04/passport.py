@@ -2,40 +2,33 @@
 # passport class
 #
 
+import re
+
 #
 # input validators
 #
 # All accept a string, and return parsed validated input or None
 #
-def byr_v(x):
+
+def intrange_v(x, vmin, vmax):
+    """Validate that x is an integer with vmin <= x <= vmax."""
     try:
         y = int(x)
     except:
         return None
-    if y >= 1920 and y <= 2002:
+    if y >= vmin and y <= vmax:
         return y
     return None
 
-def iyr_v(x):
-    try:
-        y = int(x)
-    except:
+def regex_v(x, pattern):
+    """Validate that x matches the regex pattern."""
+    if re.match(pattern,x):
+        return x
+    else:
         return None
-    if y >= 2010 and y <= 2020:
-        return y
-    return None
-
-def eyr_v(x):
-    try:
-        y = int(x)
-    except:
-        return None
-    if y >= 2020 and y <= 2030:
-        return y
-    return None
 
 def hgt_v(x):
-    """ Validate height and return height in cm"""
+    """ Validate height and convert to cm."""
     try:
         unit = x[-2:]
         val = int(x[:-2])
@@ -47,48 +40,15 @@ def hgt_v(x):
         return val*2.54
     return None
 
-hexdigits = list('01234567890abcdef')
-def hcl_v(x):
-    try:
-        if x[0] != '#':
-            return None
-        for i in [1,2,3,4,5,6]:
-            if x[i] not in hexdigits:
-                return None
-    except:
-        return None
-    return x
-
-eyecolors = ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth']
-def ecl_v(x):
-    if (x in eyecolors):
-        return x
-    return None
-
-digits = list('01234567890')
-def pid_v(x):
-    if len(x) != 9:
-        return None
-    try:
-        for i in range(9):
-            if x[i] not in digits:
-                return None
-    except:
-        return None
-    return x
-
-def cid_v(x):
-    return x
-
 validators = {
-"byr": byr_v,
-"iyr": iyr_v,
-"eyr": eyr_v,
+"byr": lambda x : intrange_v(x,1920,2002),
+"iyr": lambda x : intrange_v(x,2010,2020),
+"eyr": lambda x : intrange_v(x,2020,2030),
 "hgt": hgt_v,
-"hcl": hcl_v,
-"ecl": ecl_v,
-"pid": pid_v,
-"cid": cid_v
+"hcl": lambda x : regex_v(x, '^#[0-9a-f]{6}$'),
+"ecl": lambda x : regex_v(x, '^amb|blu|brn|gry|grn|hzl|oth$'),
+"pid": lambda x : regex_v(x, '^[0-9]{9}$'),
+"cid": lambda x : x
 }
 
 class Passport:
