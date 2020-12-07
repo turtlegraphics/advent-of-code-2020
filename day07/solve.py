@@ -18,7 +18,7 @@ def axe(x):
 
 def bagoff(x):
     x = x.strip()
-    loc = x.find('bag')
+    loc = x.rfind('bag')
     x = x[:loc]
     return x.strip()
 
