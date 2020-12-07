@@ -6,6 +6,7 @@
 #
 from argparse import ArgumentParser
 from math import sqrt
+from copy import copy
 
 def parse_args():
     parser = ArgumentParser()
@@ -44,6 +45,9 @@ class Point:
     def __init__(self, x=0, y=0):
         self.x, self.y = x,y
 
+    def __copy__(self):
+        return Point(self.x,self.y)
+
     def __iter__(self):
         yield self.x
         yield self.y
@@ -56,18 +60,25 @@ class Point:
         return abs(self - other)
 
     def __add__(self,other):
-        return Point(self.x + other.x, self.y + other.y)
+        newpt = self.__copy__()
+        newpt += other
+        return newpt
 
     def __iadd__(self,other):
         self.x += other.x
         self.y += other.y
+        return self
 
     def __sub__(self,other):
-        return Point(self.x - other.x, self.y - other.y)
+        newpt = self.__copy__()
+        print newpt
+        newpt -= other
+        return newpt
 
     def __isub__(self,other):
         self.x -= other.x
         self.y -= other.y
+        return self
 
     def __str__(self):
         return '(%s,%s)' % (str(self.x),str(self.y))
@@ -145,6 +156,9 @@ class HexPoint(Point):
         'e' : (1,0)
         }
         
+    def __copy__(self):
+        return HexPoint(self.x,self.y)
+
     def __abs__(self):
         """Returns distance to the origin on the hex grid"""
         x,y = self.x,self.y
@@ -210,6 +224,12 @@ if __name__ == '__main__':
     print
     print 'Take a stroll'
     p = HexPoint()
+    q = HexPoint()
+    q.move('sw')
+    q.move('sw')
+    q.move('w')
+    h[q] = 'q'
+
     i = 0
     h[p] = '0'
     for d in ['e','ne','ne','nw','w','w','w','sw','se']:
@@ -222,3 +242,4 @@ if __name__ == '__main__':
     h.display()
 
     print 'Ended',abs(p),'from start'
+    print 'Ended',p.dist(q),'from q'
