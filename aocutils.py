@@ -68,6 +68,9 @@ class Point:
         """Euclidean distance."""
         return abs(self - other)
 
+    def __eq__(self,other):
+        return (self.x == other.x) and (self.y == other.y)
+
     def __add__(self,other):
         newpt = self.__copy__()
         newpt += other
@@ -80,7 +83,6 @@ class Point:
 
     def __sub__(self,other):
         newpt = self.__copy__()
-        print newpt
         newpt -= other
         return newpt
 
@@ -192,11 +194,13 @@ if __name__ == '__main__':
     q = Point((3,3)) # ok to use tuple
     r = Point(p)
     r += Point(10,10)
+    r -= Point(5,1)
 
     print 'p=%s,q=%s,r=%s' % (str(p),str(q),str(r))
-    print p.dist(q),'apart'
+    print 'q and q are',p.dist(q),'apart'
     print 'p + q = ',p+q
-    print
+    print 'r - q = ',r-q
+    assert(r - q == Point(3,8))
 
     # Grid
     print '-'*20
@@ -253,3 +257,4 @@ if __name__ == '__main__':
 
     print 'Ended',abs(p),'from start'
     print 'Ended',p.dist(q),'from q'
+    assert(p.dist(q) == 3)
