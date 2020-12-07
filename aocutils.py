@@ -6,7 +6,6 @@
 #
 from argparse import ArgumentParser
 from math import sqrt
-from copy import copy
 
 def parse_args():
     parser = ArgumentParser()
