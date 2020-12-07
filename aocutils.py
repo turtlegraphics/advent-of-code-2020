@@ -201,6 +201,7 @@ if __name__ == '__main__':
     print 'p + q = ',p+q
     print 'r - q = ',r-q
     assert(r - q == Point(3,8))
+    assert(p != q)
 
     # Grid
     print '-'*20
