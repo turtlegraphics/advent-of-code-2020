@@ -42,10 +42,20 @@ class Point:
     A 2d point class
     """
     def __init__(self, x=0, y=0):
-        self.x, self.y = x,y
+        """
+        Construct from another point, an (x,y) tuple,
+        or x and y passed as values.
+        """
+        if isinstance(x,Point):
+            self.x = x.x
+            self.y = x.y
+        elif isinstance(x,tuple):
+            self.x, self.y = x
+        else:
+            self.x, self.y = x,y
 
     def __copy__(self):
-        return Point(self.x,self.y)
+        return Point(self)
 
     def __iter__(self):
         yield self.x
@@ -156,7 +166,7 @@ class HexPoint(Point):
         }
         
     def __copy__(self):
-        return HexPoint(self.x,self.y)
+        return HexPoint(self)
 
     def __abs__(self):
         """Returns distance to the origin on the hex grid"""
@@ -169,9 +179,7 @@ class HexPoint(Point):
         return abs(diag) + abs(x + diag) + abs(y - diag)
 
     def move(self,dir):
-        dx,dy = self.DIRECTIONS[dir.lower()]
-        self.x += dx
-        self.y += dy
+        self += HexPoint(self.DIRECTIONS[dir.lower()])
 
 if __name__ == '__main__':
     print(parse_args())
@@ -181,8 +189,11 @@ if __name__ == '__main__':
     print "Point class"
     print '-'*20
     p = Point(1,2)
-    q = Point(3,3)
-    print 'p=%s,q=%s' % (str(p),str(q))
+    q = Point((3,3)) # ok to use tuple
+    r = Point(p)
+    r += Point(10,10)
+
+    print 'p=%s,q=%s,r=%s' % (str(p),str(q),str(r))
     print p.dist(q),'apart'
     print 'p + q = ',p+q
     print
