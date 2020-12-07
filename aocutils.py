@@ -160,9 +160,6 @@ class HexPoint(Point):
         self.x += dx
         self.y += dy
 
-    def __str__(self):
-        return '(%d,%d)' % (self.x,self.y)
-
 if __name__ == '__main__':
     print(parse_args())
 
