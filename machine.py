@@ -23,11 +23,13 @@ class Machine:
             code.append((op,int(val)))
         return code
 
-    def run(self):
+    def run(self, debug=False):
         """Run until a repeat occurs"""
         while self.run_already[self.ip] == 0:
             self.run_already[self.ip] += 1
             op,val = self.code[self.ip]
+            if debug:
+                print "[%4d]:%s %d (acc=%d)" % (self.ip, op, val, self.acc)
             if op == 'nop':
                 self.ip += 1
                 continue
@@ -39,3 +41,21 @@ class Machine:
                 self.ip += val
                 continue
             raise('bad op:'+str(op)+'at line'+str(self.ip))
+
+if __name__=="__main__":
+    prog =\
+"""acc +13
+acc -6
+acc -8
+jmp +3
+acc +44
+acc +21
+nop +23
+acc +5
+jmp -3
+acc +9
+acc +19
+nop +513"""
+    m = Machine(prog.split('\n'))
+    m.run(debug = True)
+    assert(m.acc == 25)
