@@ -29,7 +29,9 @@ class Machine:
             self.run_already[self.ip] += 1
             op,val = self.code[self.ip]
             if debug:
-                print "[%4d]:%s %d (acc=%d)" % (self.ip, op, val, self.acc)
+                sgn = '+' if val > 0 else ''
+                print "[%4d]:%s %s%d (acc=%d)" %\
+                    (self.ip, op, sgn, val, self.acc)
             if op == 'nop':
                 self.ip += 1
                 continue
