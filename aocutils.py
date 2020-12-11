@@ -121,8 +121,38 @@ class Grid:
         self.raster[(x,y)] = tile
 
     def __getitem__(self,p):
-        (x,y) = p
+        x,y = p
         return self.raster[(x,y)]
+
+    def __contains__(self,p):
+        x,y = p
+        return (x,y) in self.raster
+
+    def __iter__(self):
+        return iter(self.raster)
+
+    def _neighbors(self,p,dirs):
+        """Return a list of valid neighbors of p in dirs directions."""
+        n = []
+        for d in dirs:
+            q = p + Point(d)
+            if q in self:
+                n.append(q)
+        return n
+
+    _dirs = [(1,0),(-1,0),(0,1),(0,-1),
+             (1,1),(-1,1),(1,-1),(-1,-1)]
+
+    def neighbors(self,p,diagonal = False):
+        """
+        Return a list of valid neighbors of p.
+        Uses the four cardinal directions, unless diagonal is True,
+        in which case it uses the eight grid neighbors
+        """
+        x,y = p
+        if diagonal:
+            return self._neighbors(Point((x,y)),self._dirs)
+        return self._neighbors(Point((x,y)),self._dirs[:4])
 
     def display(self):
         for y in range(self.ymax,self.ymin-1,-1):
@@ -139,6 +169,13 @@ class HexGrid(Grid):
     Class representing a hexagonal grid.
     See HexPoint class for details of coordinates
     """
+    def neighbors(self,p):
+        """
+        Return a list of valid neighbors of p
+        p must be a HexPoint
+        """
+        return self._neighbors(p,p.DIRECTIONS.values())
+
     def display(self):
         for y in range(self.ymax,self.ymin-1,-1):
             out = ' '*(y-self.ymin)
@@ -208,15 +245,30 @@ if __name__ == '__main__':
     print "Grid class"
     print '-'*20
     g = Grid()
-    g[Point(0,-1)] = 'U'
     g[Point(-1,0)] = 'o'
     g[Point(1,0)] = 'o'
-    for p in [(-1,2),(0,2),(1,2),(-2,1),(-2,0),(-2,-1),
-              (2,1),(2,0),(2,-1),(-1,-2),(0,-2),(1,-2)]:
+    dots = [(-1,2),(0,2),(1,2),(-2,1),(-2,0),(-2,-1),
+            (2,1),(2,0),(2,-1),(-1,-2),(0,-2),(1,-2)]
+    for p in dots:
         g[p] = '.'
-    assert(g[(0,-1)] == 'U')
+    nose = Point(0,-1)
+    g[nose] = 'U'
     g.display()
-    print
+
+    dotcount = 0
+    for p in g:
+        if g[p] == '.':
+            dotcount += 1
+    print 'There are %d dots.' % dotcount
+    assert(dotcount == len(dots))
+
+    assert(g[nose] == 'U')
+    assert((5,5) not in g)
+    assert((2,0) in g)
+
+    nosenbrs = tuple([len(g.neighbors(nose,diag)) for diag in [False,True]])
+    print 'nose U has %d cardinal and %d diagonal neighbors.' % nosenbrs
+    assert((1,5) == nosenbrs)
 
     # HexGrid, HexPoint
     print '-'*20
@@ -258,4 +310,6 @@ if __name__ == '__main__':
 
     print 'Ended',abs(p),'from start'
     print 'Ended',p.dist(q),'from q'
+
     assert(p.dist(q) == 3)
+    assert(len(h.neighbors(p)) == 6)
