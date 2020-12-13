@@ -244,7 +244,16 @@ class HexPoint(Point):
         self += HexPoint(self.DIRECTIONS[dir.lower()])
 
 if __name__ == '__main__':
+    # Argument parsing
     print(parse_args())
+
+    # Number Theory
+    print '-'*20
+    print "Number Theory"
+    print '-'*20
+    print 'The multiplicative inverse of 5 mod 13 is',mul_inv(5,13)
+    print 'Solve x = 4 mod 16 and x = 2 mod 21:',
+    print chinese_remainder([16,21],[4,2])
 
     # Point
     print '-'*20
