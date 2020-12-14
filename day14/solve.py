@@ -17,7 +17,7 @@ mem = {}
 def writeall(loc,val,floats):
     if len(floats) == 0:
         if args.verbose > 1:
-            print 'writing {0:b}'.format(loc),'<--',val
+            print 'write ',format(loc,"036b"),'<--',val
         mem[loc] = val
         return
     
