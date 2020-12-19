@@ -9,65 +9,55 @@ import re
 sys.path.append("..")
 import aocutils
 
-args = aocutils.parse_args()
-
-inputfile = open(args.file).read()
-
-ruleslist, messageslist = inputfile.split('\n\n')
-
-LIT = 0
-LST = 1
-ALT = 2
-
 class Rule:
-    def __init__(self, rule):
+    def __init__(self, rule=None):
         self._regex = None
+
+    @classmethod
+    def create(cls, rule):
+        """Rule factory method."""
         if '"' in rule:
-            self.type = LIT
-            self.val = rule.strip('" ')
+            return Literal(rule)
         elif '|' in rule:
-            self.type = ALT
-            one,two = rule.split('|')
-            self.subrules = [Rule(one),Rule(two)]
+            return Alternation(rule)
         else:
-            self.type = LST
-            self.subrules = [int(n) for n in rule.split()]
+            return RuleList(rule)
 
+class Literal(Rule):
+    def __init__(self,rule):
+        self.val = rule.strip('" ')
+        Rule.__init__(self)
     def __str__(self):
-        out = ''
-        if self.type == LIT:
-            out += '"%s"' % self.val
-        elif self.type == ALT:
-            for r in self.subrules:
-                out += str(r) + ' | '
-            out = out[:-3]
-        else:
-            for n in self.subrules:
-                out += str(n) + ' '
-            out = out[:-1]
-        return out
-
+        return '"%s"' % self.val
     def regex(self):
-        """Return a regex for this rule to match"""
-        if self._regex:
-            return self._regex
+        return self.val
 
-        if self.type == LIT:
-            self._regex = self.val
-        elif self.type == LST:
-            self._regex = ''.join([rules[n].regex() for n in self.subrules])
-        else:
-            assert(self.type == ALT)
+class Alternation(Rule):
+    def __init__(self,rule):
+        self.subrules = [Rule.create(r) for r in rule.split('|')]
+        Rule.__init__(self)
+    def __str__(self):
+        return ' | '.join([str(r) for r in self.subrules])
+    def regex(self):
+        if not self._regex:
             self._regex = '|'.join([r.regex() for r in self.subrules])
             self._regex = '(?:' + self._regex + ')'
         return self._regex
 
-class Rule8(Rule):
-    def __init__(self):
-        self.name = 'SPECIAL 42 | 42 8'
-        self._regex = None
+class RuleList(Rule):
+    def __init__(self,rule):
+        self.subrules = [int(n) for n in rule.split()]
+        Rule.__init__(self)
     def __str__(self):
-        return self.name
+        return ' '.join([str(n) for n in self.subrules])
+    def regex(self):
+        if not self._regex:
+            self._regex = ''.join([rules[n].regex() for n in self.subrules])
+        return self._regex
+
+class Rule8(Rule):
+    def __str__(self):
+        return 'SPECIAL 42 | 42 8'
     def regex(self):
         if self._regex:
             return self._regex
@@ -75,11 +65,8 @@ class Rule8(Rule):
         return self._regex
 
 class Rule11(Rule):
-    def __init__(self):
-        self.name = 'SPECIAL 42 31 | 42 11 31'
-        self._regex = None
     def __str__(self):
-        return self.name
+        return 'SPECIAL 42 31 | 42 11 31'
     def regex(self):
         if self._regex:
             return self._regex
@@ -93,8 +80,13 @@ class Rule11(Rule):
         self._regex = '(?:' + '|'.join(myrules) + ')'
         return self._regex
 
-rules = {}
+# Handle input
+args = aocutils.parse_args()
+inputfile = open(args.file).read()
+ruleslist, messageslist = inputfile.split('\n\n')
 
+# Build a dictionary of rules
+rules = {}
 for line in ruleslist.split('\n'):
     num, rule = line.split(':')
     num = int(num)
@@ -103,7 +95,7 @@ for line in ruleslist.split('\n'):
     elif num == 11 and args.part == 2:
         rules[num] = Rule11()
     else:
-        rules[num] = Rule(rule.strip())
+        rules[num] = Rule.create(rule)
 
 if args.verbose > 1:
     # print rules, in order
@@ -112,32 +104,25 @@ if args.verbose > 1:
     for i in rnums:
         print i,':',rules[i]
 
-matches = {}
-valid = 0
-
+# get the regular expression for rule 0
+# (which kicks of a cascade of regex calculuation in all the rules)
 zeroregex = '^' + rules[0].regex() + '$'
+
 print 'rule 0 regular expression has',len(zeroregex),'characters:'
-if len(zeroregex) < 70:
-    print zeroregex
-else:
-    print zeroregex[:70]+'...'
+print zeroregex if len(zeroregex) < 70 else zeroregex[:70]+'...'
 
+zeroregex = re.compile(zeroregex)
+
+# validate the messages
 messages = messageslist.strip().split('\n')
-print 'validating',len(messages),'messages'
-n = 0
+count = 0
 for message in messages:
-    n += 1
+    valid = zeroregex.match(message)
+    if valid:
+        count += 1
+        
     if args.verbose > 1:
-        print n,message,
-    zr = re.compile(zeroregex)
-    if zr.match(message):
-        if args.verbose > 1:
-            print 'matches rule 0'
-        valid += 1
-    else:
-        if args.verbose > 1:
-            print 'no match.'
+        print message,'valid' if valid else 'invalid'
 
-#for k in sorted(matches.keys(),key=len):
-#    print k,matches[k]
-print 'Part ' + str(args.part) + ':',valid
+# report solution
+print 'Part ' + str(args.part) + ':',count
