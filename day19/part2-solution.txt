@@ -1,0 +1,385 @@
+validating 379 messages
+1 aaaabbaaaaababbaabbbbbbbabbbbaabbabaabbbbbbbaaba matches rule 0
+2 ababaaabbbabababbabbbbba no match.
+3 bbbbaaaaabbbababaaabbbaa matches rule 0
+4 bbbbbaaaabbbababbaaaabab matches rule 0
+5 aaabaababbabaabaaabababaabaaaaabbbbabbba matches rule 0
+6 bbaaabababbaabbbbabaaababababaaaabbbaaba matches rule 0
+7 bbbaabbabaabaabaababaaaaabaaabaabaabbbabbaababbb matches rule 0
+8 aaaaaabbabbaabbbbbbbaaaaaaaaabab matches rule 0
+9 bbaaabbbbaababaabbbbbbaabbbbababbabbabaaaabaababbaaaaabbaabaaaba matches rule 0
+10 ababbbbbabbaabbbbbbbbaab matches rule 0
+11 aabbabaaaaabbaabaaaaaabb no match.
+12 aaabaabaaababbabaaabbaba matches rule 0
+13 bbbaaaabbbbbaaabbababaabaaaaabba matches rule 0
+14 aaaabbbbaaabaabaaaaaaaabbaabbaaababbbbbb matches rule 0
+15 bbbbbbaabbaaababababbaaabbabbbaabaaaaaaa matches rule 0
+16 aaabbaaaaabababaaababbbbabbbbabbbabaaaabbbbaabbb matches rule 0
+17 baabbbbbaabbbabaabbaaabbbaaaabaababaabbaabbabaaa no match.
+18 abbaaababaaabbbaaabbbababbaabbbb no match.
+19 bbbaaababbbbaaabbaabbbaaaaaabababbaabaaaabbaaaababbabbaa no match.
+20 bbaaaaabbbabbabbbbabbbaa no match.
+21 baabababbbaaababbabababbabaaabab matches rule 0
+22 babbababbbaaababbbaaaaaabababbbbabaabbaababbbbaabbbaabab matches rule 0
+23 bababbbbbbaaaaaabaabbbbb matches rule 0
+24 aabaaaabbabababbabaaaabaaabbaaaabbabbbbbbbbbabaaababbabb matches rule 0
+25 baabbaabaababbabbabbbaab matches rule 0
+26 abaaabaaabbbabababbababbbaaaaaab matches rule 0
+27 babbaaabaabababaabaabababaaababa matches rule 0
+28 bbbaaaaaaaabbbababaaabab matches rule 0
+29 aaababaaaabaabbbaabaaaabbbababbabababbabaaabbaabbbaabbababbaabab matches rule 0
+30 abbbaabbbabababbbabaabaabbaabbbbabaabbbb matches rule 0
+31 aaaaaaabbaabaabaaabbaaab matches rule 0
+32 aabbabbabbabaabbabaababaaaaaabaa matches rule 0
+33 aaabbaabbabaabaababbbbaa matches rule 0
+34 baabaababbabbaababbabaabbbabbaabaaabbabbabbaaabb matches rule 0
+35 babbbbabbaababaababbbbabbbbaabab matches rule 0
+36 bbaaaaaaabbbbbaabbbbbaabbaaaabbb no match.
+37 aabbbbbbaabbabbabbbbaaaabbbaaaaaabbbaabaabaabaaa matches rule 0
+38 aaabbabbbaaababbaaabaaaabbbaaaaaabbbbbabbababbba matches rule 0
+39 ababbaaabbbabaabbabbbbabbababababababaabaabaaabb matches rule 0
+40 babaaabababaaaaaabaaabbabbaaaababaababbb matches rule 0
+41 bbbabaabaaaaaaabaaabbaaabaababbb matches rule 0
+42 abbaaaaaabbaaabababababababaaaaabaabbbbbabbabbba matches rule 0
+43 abbbaabbbaabaabaaaabbbabaabaabba matches rule 0
+44 aababbaabbaaaaaaaabaabbbbbababaaabababaa matches rule 0
+45 aaabbabbbabaaababaabaaab matches rule 0
+46 bbaaaabbaaabbabbbbbabaababbbbabaabbabbba matches rule 0
+47 bababaaabbaaaaaabaaaabba matches rule 0
+48 baaabaaabaaabbbbbaaaaaaa matches rule 0
+49 bbbaaabaababaabbbbbaabbaaaaaaaabaabbabab matches rule 0
+50 abaababaaabbaaaaaabaabaaabbbabba no match.
+51 aabbbbbbbaaabbbbaaabaabbbbbaaabaabbaaabaabbbababbabbabba matches rule 0
+52 bbaababaaabbbbabbbbaaabbbbbbbbbaabbbabbbaaaaabaa matches rule 0
+53 aabababbaaabaaaaaaaaabab matches rule 0
+54 babaabbbabaaaaaaababbabaababbbbaaaabbaaabbbaabaa no match.
+55 aabaaaabbbaaabbaaabababbbbbbbabbaabbbaaaaabaababbabaaabbbbababbbabbbbaaa matches rule 0
+56 abaabbababbababbaaaabbabaaaabbaaaaaabaaa matches rule 0
+57 bbbaabaaaaabaaaabaababaaabbaabaabbbbabaa matches rule 0
+58 babbabbbbabababbaabaabbbbbbabbbbabbbbbab matches rule 0
+59 abbbabaaaaaabaabaaabbabbabaaaabbabaaabbb matches rule 0
+60 abaaabbababaaabaaababbaabbabaaabbabaabbbaaaabaaaaababbba matches rule 0
+61 bababbbbbaabaaaabaabababbbbaaabaaabbbbaaaabbbbba matches rule 0
+62 ababbbbbaabababbaaababaababbbbbaabaabbaaabaaaaabaabbbbba matches rule 0
+63 babaabaaabbababbaaabbbabbaababba matches rule 0
+64 baaaabbbbbaaaaaaaababbbbaabaabba matches rule 0
+65 abbababbaabbbbbbbbbbbaba matches rule 0
+66 baaaabaaaabbbaaaabababbbbaaabbabaaaabaaaababaaaabbabbbaa no match.
+67 baababbaaaaaaaaababbaabaabbaaabaabbbbaababbbabaabbabbaaabaaaabbbbaaababa no match.
+68 abaaabaaabbaabbbbababbaabaaababbaabababaabbbaaba matches rule 0
+69 baabbaabbbbbababbbaaaaabaaaabaababbbaaababababaababbaabaababbaab matches rule 0
+70 abbbaabbaaaabbaabbaabaab matches rule 0
+71 aabbbaaaaabbbaaaabbaabab matches rule 0
+72 aaaababbabaabbabaaaaabbb matches rule 0
+73 aaababaaaaaaaabbaaaaabab matches rule 0
+74 aaaaaaababbabbababababaa no match.
+75 aaabaaaabaaababbabaaabaabaaabaaabbabbbaaaaaaabaa matches rule 0
+76 abbbababaabaabbbabaabababbaaababbaabbbaababbbaab matches rule 0
+77 babaaaabbbbbbbbabbbaaaabbababaabbabbaaabbbbababbababbababaabbaaa matches rule 0
+78 aaaabbabababbaaaaababbabbaabaaaaabbaabab matches rule 0
+79 bbabaabbaaababaabbaabbbb matches rule 0
+80 aabaabbbbbabbabaabbbbbbbaaaabaababbaaabaabbabbbb matches rule 0
+81 babbabbbaaaabbaabaabbaabbbbbababbbaabbbaaaabbbbababbbaba matches rule 0
+82 abbbbbbabbabaaaababbaabaabababbabbbbbababbbbbaababbbaaaa no match.
+83 ababbbbbaaaababbbabbabbbabaababbbbababbabbbaababaaabbbbb matches rule 0
+84 baaaaaaabbaabbababababbabbbbbaba no match.
+85 bbaaabbbbabbaaaabbbbbaaabaabbaaa matches rule 0
+86 abaaaaaaababbbabbbbbabba matches rule 0
+87 babababbabbaaaaabbabbaabaabbbbaaabbaabba matches rule 0
+88 bbabaaabbababaabbbbabbba matches rule 0
+89 abaaabbaabbaabbbabbaaaaabaabbaabaabbaabb matches rule 0
+90 babbaaabbabbbbbaaabaaaba matches rule 0
+91 babababbbbbbbabbbababbba matches rule 0
+92 abbbababbababaaabbbbababbabbbaba matches rule 0
+93 bbaaaaabbaaababbbbbbaaabbabaabbbabbabbaa matches rule 0
+94 bbabaaaaabaaaabbbaaaaaba matches rule 0
+95 babaabaababbbbbaaaaaaabababababbaabaabaaabaabbbb matches rule 0
+96 babbabaaaabbabbbbaabbbab matches rule 0
+97 bbabaaabbbbbaaaaababababbaababaaabaabbbaabaaabbb matches rule 0
+98 bababaaabbabbaabbabaaaaababbabbaabbabbba matches rule 0
+99 abbaabababababbbabaaabbb no match.
+100 bbabbbaaaaaabbbbbbbaaababbabaabaaabaaabbaabaabaa matches rule 0
+101 baabbaabbabbbbabbaaabaab matches rule 0
+102 aaaaaaabbbbbababbbbbababbabaabbabbbbbbbb matches rule 0
+103 baabaaaabaabbbbabbaaabbababbabaababaaabb matches rule 0
+104 bbaaaaaaabaababbbbbaabaababbaaba matches rule 0
+105 bbbababaaababbaababaaaabbbaabaabbaabbbbb matches rule 0
+106 abaabbabababaaaabbbaabbabaababbbbabbabba matches rule 0
+107 bbbabababbbbbaaabbbbaaabaabbbbba matches rule 0
+108 abbaabbbbbbbababaaaabbbbabbababbbbaabbab matches rule 0
+109 abaaabaabbabbbaaaabbabbbbbbaabab matches rule 0
+110 babaaaaabbabaaaabbabbaaaababababaababbabbabaabba matches rule 0
+111 bbaaabbbbabaaababbabbabaaaaaaababababababaaaaabbabbabbabbaabbbaaaaaaabba matches rule 0
+112 abaaabaaaaabbaabababaaabbaababaababaabbabbbbbbababbbbaba matches rule 0
+113 bbababbababaaababbabbbba matches rule 0
+114 abbbabbaaababbaabbabbaaaaaabaaaababaabab matches rule 0
+115 aaababaababaabaaaaababbbabaabaaa matches rule 0
+116 bbbbbbaababbaaabbbbaaabaaaaaaaabbbbaaababaaabbab matches rule 0
+117 babbbbbaaabababbababaaaababbbabbaabaabba matches rule 0
+118 bbaaababbbabaababaaabbaabbabaaaaaaaabbaabaaaaabb matches rule 0
+119 aabbbaabbbabaababaabbaabbaababba matches rule 0
+120 bbaaababbabbbabbbabaabbbbbababbb no match.
+121 aaababbaaaaaaababbbaaabbabbbaaabaabbbbaaaabaabab matches rule 0
+122 aaababaaabbbabababaaabbabbaaabaaaaabbbba matches rule 0
+123 bbaaaaaaabbabaabbbbababaaaaabbbbaabaaabb matches rule 0
+124 bbabbbababbbbbbbaaaabbaabbaabababaabaabb matches rule 0
+125 babababbabaaabbabbbabbbb matches rule 0
+126 bbabbaabababaaaaaabbabaabaabaabaaabbaaab matches rule 0
+127 aaaaaaabbbabababbbaaaaba matches rule 0
+128 baababaabbabbababaaaaaab matches rule 0
+129 ababababababababbbbbbabbabaaabababbbbbaa matches rule 0
+130 abaabaabaabaaaaaabbababaabbbabbb no match.
+131 babbbbabbababaabbaababba matches rule 0
+132 bbabaaabbaababaaaaaaaaaa matches rule 0
+133 baaabbbbbbbababaabaababaaabababbabbaababababaaba matches rule 0
+134 abbababbbabaaaabaaaaabba matches rule 0
+135 abaababbaabbbaaabbbabbbababbbbbaabababababbbbbabbbbabaab no match.
+136 bbabbbaabaaabaaaaaaaaabbbbaaaaabbbbbbaab matches rule 0
+137 abbbbaababaabbababbbaaabbaabbbab matches rule 0
+138 abbbabbaabbbababbbbaaababababbba matches rule 0
+139 abbaabbbababaabbabaaaabaabaaaabbbabbaaba matches rule 0
+140 aabbbbbabbaaaabbabbbbbababaabaabbabbabbbabbaaabbbaabababababbbbaaabbababbbabbbba no match.
+141 bbaaabbaabaababbababbaba matches rule 0
+142 abaaabbaabaaabaaaaabbabbbabbbaab matches rule 0
+143 ababababbbabaabbabaabaab matches rule 0
+144 aababbabbababbbbaababaaa matches rule 0
+145 abbaaabaaaabbaabbbbbbaab matches rule 0
+146 aababbbbabbaabbaaabaaaaaabaababbabbbbbbbbabaabbbbbabbabb no match.
+147 ababaabbaaaabaabababbaaaabbbababbbabbbbb matches rule 0
+148 abaabbabbababaaabbbabababaabbabbbbaaaaba matches rule 0
+149 bbbaabbabbabbbabbabaaaaaaaaababbaaabbaabbababaaa no match.
+150 aabbabaaabbbabbabaababababaaaababaababaabaabbbaaabaabbaaabbabbba matches rule 0
+151 aaaabbbbbaaababbbababaabbaaaabbbbbabababbaaaaabb matches rule 0
+152 baaaabbbbbabaaaaaaababbb no match.
+153 abbbbaabaaabbbbbbababaaaabaabbbbbbaabaaabbbabbabbbbaaaabaabbbbabbababbbaaabbbabb no match.
+154 bbaaaabbabaaaabbabbaaababbbabaaabaaabbba matches rule 0
+155 abbababbbbbaabbaaaaaabba matches rule 0
+156 babbabaabbbbbabbaaabaaab matches rule 0
+157 abaaabbaaaababaabbaabbbb matches rule 0
+158 abaabbabaaabbaabbaabababbbbabaaaabababba matches rule 0
+159 ababababbabbbaaaababbabb matches rule 0
+160 bbbbabaabbbbbbbbbabbbabbbbbbabaa no match.
+161 babaaaaaaabbabbababaabaababbabba matches rule 0
+162 bbaaabbabababaabaaaaabab matches rule 0
+163 abbbaaabaabaabbbbabbaaababbababbbaabaaab matches rule 0
+164 abaaabaaaaabbabbbbbaabaaababbbbbaabbbbba matches rule 0
+165 aabababbaaaabbbaaaabbbba matches rule 0
+166 aabbbaabbbbaaabbbbbaabbaabababaa matches rule 0
+167 bababbabbbabaababbbaaababababbaaaababbaabbbababb matches rule 0
+168 bbbababaaababbabbabbbaba matches rule 0
+169 aababababababbaababbbaba matches rule 0
+170 aababbabaabbabbbaabaaaabaabbbabb matches rule 0
+171 bbabababbababaaaaaababbabbbaabbb matches rule 0
+172 aababbabbbaaaaabbbabbbba matches rule 0
+173 bbaaaaabbaabaababaaabaaaaababbabbbbbaabbbaabaabbaaaaabbb matches rule 0
+174 baabbaabbbbaaabbababababbbaabbbb matches rule 0
+175 aaaabaaaaaabaaababaababbabbbbbbbababababaaabbbbbaabaaaba no match.
+176 abbbababbababbaabababbba matches rule 0
+177 abbbbbbbaababbabbabbbaaaabaaaabbbaaabbbbbbaaabaaaaaaabbababbbbaa matches rule 0
+178 babbbbbababbaaaaaaaaabaa matches rule 0
+179 abbbbbbaaaaabaabbaaaaabb matches rule 0
+180 aabaaaabbabababbbbaaababaabbbaabbaabbaaabbaabbaabbbbabaa matches rule 0
+181 baaaabbbbaaabbbbaabbbaabbaabaabaaaaabbaaaaaaabaa matches rule 0
+182 aaababbabababaaaaababbbbabababba matches rule 0
+183 bbabbababaabaabaaabbbbbbababaabbabaaaabbabbbbbab matches rule 0
+184 aababbabbbbaaaabbbaababaaababbaabbbbbaba matches rule 0
+185 bababbabbbbbbbaababbbbaa matches rule 0
+186 ababababaaaaaabaabbbbbbaaababbaabaaabaaaaabaaabb matches rule 0
+187 aabbabbbababaaababaababbaababaaa matches rule 0
+188 bbbaabbabaabbbbabbbaabbabaaaaaaa matches rule 0
+189 aabababbabbaaabaaaabaaaaaaabbbabaabbbaba matches rule 0
+190 aaabbaabbbbabaababbaaaab matches rule 0
+191 baabbbbaaaaabaabbaaaaaaa matches rule 0
+192 aaabbaaaabbbabaaababababbbabbbaabbbbaaaaabbbbaaa matches rule 0
+193 aabbbaabbbbbbabbabaababaaaabaabaabbaaaaa no match.
+194 babbabaaaabbbbbbaaabababbbbbbaab matches rule 0
+195 bbbbbabbbababababaaabaaaabaabbbbabaaabab matches rule 0
+196 babbbbbabbaaababbbbabbaa matches rule 0
+197 aaaaaabbbabbbbabbbaaaaabbbbaaaabaabaabaabaababbb matches rule 0
+198 aabbbaaabbbbaaaaabaabaaa matches rule 0
+199 aabababbbababbabaaaaabba matches rule 0
+200 bbbbababbbaaaaaababaabba matches rule 0
+201 aabbaaaaaabbabaaaaaaaabbbbaaabbabbbbbbab matches rule 0
+202 aaaaaabbbbbbababbaaabbba matches rule 0
+203 bbaaaaaababbababbbaaabaa matches rule 0
+204 aaabbaaabbabbbababbbbabbbabaaaaaabbabbababbbbabaabaabbba matches rule 0
+205 babaabaaaaababaabaabbaba matches rule 0
+206 bbabbabaaabbbbabaaaaaababbbbaaabaabaaaababbbbbab matches rule 0
+207 bbababbaabaababbbabbabbbbbaabbba matches rule 0
+208 baaabbaaababbaaabababbabaabbaaaabaaaaaaa matches rule 0
+209 abaaabababbbaaaaaaaaaabbbababbbabababbab no match.
+210 aaaaababaaabbbbbabbbbbab no match.
+211 aaaabbbabbaaaaaaaabaabaa matches rule 0
+212 aabbbbbbabbaaababbaaaaaaaabbabbbbaabaabb matches rule 0
+213 aabbbaabaaabaaaaaabbbbaabaabbaaa matches rule 0
+214 ababbaaaabbbababbbbababb matches rule 0
+215 babaabbbbaababbbbabbaaaaababbabababaaaabaabaaabaabaabbbababbbabb no match.
+216 baaaabbabbbbabbbbababbbbbbabbbaabbbbaaaabbbabaaa no match.
+217 aaabaaaaaaabaababbbbbabbbaababbaaabbaaba matches rule 0
+218 bbabbaaaababaaabbbababaaaaaaabaaaaaaababaaabbbba no match.
+219 aaaabaabaabababbabaabbbb matches rule 0
+220 bbababbaaababbabbabababaaabbaaba matches rule 0
+221 abaaaabbbabbabaabbbbbbab matches rule 0
+222 babaaaababaababaaabbabbbbbbbabba matches rule 0
+223 aaaabaabaaabbabaaaabaaaaaabbbbaaaaaaaabbbabaabbbababbbbb no match.
+224 aaababaababaaabaabbaabbbaaabaaaababaabbbbaabaabb matches rule 0
+225 baababaabbbbbbbababbaaabababbaaaaaaabbaabbabaabbbaaaaabbaabbbbba matches rule 0
+226 bbabbaaabbbaaaabababbbba matches rule 0
+227 bbbbaabbbabaaaaaaaaaaababaabaaaabaabbbabbbaababbbabbbbbbaabaaabb no match.
+228 abaaaabaaaaabaabababaaaabbbbaaab no match.
+229 ababaabbbbbbababbabbbbababaaaaaaabbbaaaa matches rule 0
+230 aaaabbbbabbbbbbaabbbbabbabaaabbb matches rule 0
+231 aabaababbbbbabbabbaaabaaabbaaaab no match.
+232 bababbabbaaaabbbabbabbab matches rule 0
+233 ababbbbbbbbaabaaababbbbbbbaababb matches rule 0
+234 aababbaaaaaabbbbaabbaaaababababbaabaaaaababbbbbbaabbbabb matches rule 0
+235 bbaaaabbabbbbbbaaaabbaabaabbabab matches rule 0
+236 aabbabbaaabaaaabbaababababaaabbb matches rule 0
+237 ababababbbaaaaabaaaabbbaabbbbbbabaabababbabaaababbaabbbabbaabbaa matches rule 0
+238 aabbabbaabbababbabbabaabbabbabba matches rule 0
+239 baaaabbbabbabaabaaabbaabbaaaabaabaaabbba matches rule 0
+240 bbbbaaabbabaaabaababaaaababbababababbaaababaaabbaabbbabbababbbba matches rule 0
+241 bbbabaabbbbaaabababbaaabababbbbaabbababa matches rule 0
+242 bbbaabaaaabbbbbbababbbbbababbbabbbabbbbabbbabbaa matches rule 0
+243 babbababaaaabbbbabbbbaaa matches rule 0
+244 bbabbbabbbaaaaaaaabaaabb matches rule 0
+245 bbabababbbabaaabbaabbbbaaababaaa matches rule 0
+246 aabaaaabbbbaaaaabababbbbabbaabba matches rule 0
+247 aabbbbbbbabaaaaabaaaabaa matches rule 0
+248 bbaaaaaabbbbbabbbbaabbba matches rule 0
+249 bababbbbbabaaabbaaaabbba no match.
+250 ababaaabbababaabababbbbbabbbaaabbbaabbba matches rule 0
+251 bbbbbbbaaaabbbababaaaaab matches rule 0
+252 aaababbababbababbabbbaaaaaababababaaaababababbabbabbabaabaababbabbaaababbbabbbab no match.
+253 babbababbbabaabaabbbaaaa matches rule 0
+254 babbabaaaaaabbabaababbba matches rule 0
+255 babbaaabbabaaaaaaaaabbbbbbbaabbaaababbba matches rule 0
+256 aaabaababaabaaaaaaaabaabaababababbaabbba matches rule 0
+257 bbbaabbabbbaaaaaaabbbaabbbaaaaababaaaaaaaaaabaaaaaabbbba matches rule 0
+258 abbbabbabbababbababbaaba matches rule 0
+259 bbbaaaaabababbaabbbabaaa matches rule 0
+260 babbabbbabbaaabaabbbaabbaabbbbaaaaabbabbaaabaababaabbaaa matches rule 0
+261 bababbbbbbabbaaaabababaa matches rule 0
+262 bbabbaabababababbaaaabaa matches rule 0
+263 babaabaabbabaabbabbbbbbbababaaaaaabbbbbbbbbbababbaabbaba matches rule 0
+264 bbaaabbaaaabaaaaabbaababaabbabab no match.
+265 bbbaaaaaabbbabbaaababbba matches rule 0
+266 aaaabbaaaabaabbbbabaaaabbbbbbbbb matches rule 0
+267 abbababbbbabbaaabaabaaab matches rule 0
+268 aaababbbabbbaaabbbaaabbbaababbbbbabababaaababababbaabaab matches rule 0
+269 bbabbbbaababbbaaabbbbabaaababaaa no match.
+270 bbbaabaaabbbbabbbaaabaaaaabaaaabbbbbaababbaaabaaaaaaaaaa matches rule 0
+271 aaabbbabbbaaababbbabbaaabaaabbaaaaabababbaabbbab matches rule 0
+272 bbabaabbaabbbbaaaabbaaaabaababbbabaabaaa matches rule 0
+273 baaabbbbbbaaabbaabbbbbbaaaabaaab matches rule 0
+274 bbbaaabbabbaaaaabaababbb matches rule 0
+275 aabbabbbaaabaabbbabababbbabbbbabbbabaaabaaaaaaaaaaabbbba matches rule 0
+276 bbbaabbaaaaabbbababbbbaa matches rule 0
+277 aaaaaaabbbaaababaaabaabababbbaba matches rule 0
+278 babababbbaababababaaaabaaaabbbaa matches rule 0
+279 bbbaaaaaabbbbaabaaabaabbbbbaaabb no match.
+280 bbbbbaaabbbbbbbaaaaabbaaaaaabaaa matches rule 0
+281 aabababbaaabbbabbbabaabbbaaabababaaaaaaa matches rule 0
+282 bababaaabbabbbaabaabbaabaaaabbbbbaaababbbbabbabbbaababbb matches rule 0
+283 bbbbbabbaaabbaabbbaababb matches rule 0
+284 bbaaaabbaaabbabbbbabbbaababbbaabbbbbbbab matches rule 0
+285 ababaabbbbabbaabbaaaaaaa matches rule 0
+286 abaaaabaabaababbbababbabaabaababaaaaaaaa matches rule 0
+287 abbbabaabbabababbbbaaaaaabbaabab matches rule 0
+288 bbbbbabbaabbbbaaabbbbbba no match.
+289 bbaaaabbaaaababbbbbbbabbbababbbbaabbabaaaaabbbbbbabaabba matches rule 0
+290 bbbaabaababaaaabaaabbbba matches rule 0
+291 bbababbabbbbabbababaababbbabbbbbaabaabbaabbbabab no match.
+292 abbbabbabbabaabbbaababaaababaabbbbaabaaa matches rule 0
+293 bababaaaaabbbaabbbbbbaabbaabbabb no match.
+294 abbbbbbaabbaaaaaaabbaaaaaabbbaaababaababbbbabbba matches rule 0
+295 bbbabababbbaaabbabbbaaababbbabbb matches rule 0
+296 aaaabaabaabbaaaaaaaaaabababbaabb matches rule 0
+297 bbaaabbbababaabbbbbbbaaaababbabaaabbbbba matches rule 0
+298 bbbaaabbaabaabbbaabbbbaaaababbbbabbbaabbbbaabbba matches rule 0
+299 ababaaabbbabbbabaabababbabababaabbababaa matches rule 0
+300 aabbabbbbabbaaababbbbbab matches rule 0
+301 abaaabbabababbababbaabbbaaaabbabaababbaabbababaaabababbabbbbbbbb matches rule 0
+302 abaabaaababbaabbbbbabaabbabbaabbabaabbaa no match.
+303 ababbbbbaaababaaaababaaa matches rule 0
+304 abaaaabbaabbabbaaabbaaba matches rule 0
+305 baabaaaabbbbababaabbabaaaababbaaabbabbbaabaabbaa matches rule 0
+306 aaabaababaaababbaabbabbbbbbaabbb matches rule 0
+307 abbbababbbabababbaabaabababbabababbbabbaaaaaaaaabaabbabb matches rule 0
+308 abaaabbaaaaaaabbaaaabbaaaaababbababbabaabbaabbabbaabaabb matches rule 0
+309 bbbaabaabbaaaaabaaabbabbaaaababa matches rule 0
+310 bababbaaabbabbabbaaabbabbabaaabbaaaaabba no match.
+311 aabaabbbbaabbbbabababaababaabbbbbbbabbba matches rule 0
+312 bbaabbbaabaabaaabbaabbbb no match.
+313 bababababaaaabbbbbaabbab matches rule 0
+314 bbbbbabbaabaabbbbababbaaabbbaababbbbbbbb matches rule 0
+315 abababaabbbbaaaababaaaaabbaaabbbabbababbbabaabba no match.
+316 abbbbabbbaabbbbaaabbbaababbbabbabaaaabaaaababaab matches rule 0
+317 abaaaaaabababbaaaabbaaab matches rule 0
+318 bbaaaababbbbbbbbbaaaabab no match.
+319 bbaaabbbaababababaabaaaaabaaabaaababbbabaabaaaababbabbbabbbbabbbababbbbaabbabbab matches rule 0
+320 bbbbaaabbbbabbaaaababaaabababaabbabaabababbbbabbbabbbabbabaabbabbbbaaaaa no match.
+321 aababbabababbbbabbaabbbbbbaabaaaaabbaaabbaaaababbabbabaaababaaaa no match.
+322 aabbbbbbbababbabbbaabaaaabaaaaaabbbbababaaabaabaaabbbbbbabaabbbbaaababbbbaaaabba no match.
+323 baabbbbaaababbbbbbbbaaababaaaaabaabaabab matches rule 0
+324 abaaaababbbbbbbaaaaaaabbbababbaaabbaabab matches rule 0
+325 bbbbaaaaabbbabaaaaaaaaaa matches rule 0
+326 bbbabaabbababbbbaabbabab matches rule 0
+327 bbabaaaaabbaaabaabbaabba matches rule 0
+328 bbabaaabbaabaaaababababaaaabbbbbbbaababb matches rule 0
+329 abbbbaaababaabaababaabbbaabbbbbbbabaabbb no match.
+330 aabbbaababaababbaaabababbababaabaabaaaaa matches rule 0
+331 baaabbbbaabbabbaabbbabbb matches rule 0
+332 aaabbabbbaaabbaaaabbaaaabaabaabb matches rule 0
+333 abaaabbababbaaaaabbbaaaa matches rule 0
+334 aabbabbaaaabbabbaaabbbba matches rule 0
+335 baaabaaabbbbabaabbbabbbbabaaaaababaaabaaabbbbbbaababbbbbbbbbabbaabbabbaababbaabababbaaba no match.
+336 aaabbabbbbbbaaabaaababbbbabbbaaaaaabbbba matches rule 0
+337 aaabaaaaaabbabaaabaabbabaababbbabaababbb matches rule 0
+338 aabababbabaababababbbaba matches rule 0
+339 bbbbaaaabbaaaaaababaabbb matches rule 0
+340 baabaababaaaabbbabbbbaabbaabbabb matches rule 0
+341 baaaabbbaaaaaabaabbbaabbbabaabaaabbaaaab matches rule 0
+342 aaabaabaaaabbabbbbaabbbb matches rule 0
+343 bbbaaaaaababaaaababaabaabbbaabaababbaaaabbaaaaaaaabaaabb matches rule 0
+344 abaabababbbaabaabbaaaaabaabbabab matches rule 0
+345 aaababaabababbaabbbbbaaabaaabbbbbabaababbaabbaba matches rule 0
+346 aaaabaababaabbabaaabbaaaababaaabaaabaabababbababaababaab matches rule 0
+347 aaaaaabbaaabbabbbaabbbab matches rule 0
+348 bbabbaabbbabbaabbbabbaaabbbbbaba matches rule 0
+349 baabbbbaaaaaaababbbbbbbaabaabbbaaabbaabb matches rule 0
+350 bbaaababababaaabbabbbaba matches rule 0
+351 baaabaaabbbaaababbabbbaaaabbabaaabbabbab matches rule 0
+352 bbaaabbbaaabaabbbaabbabb matches rule 0
+353 bbbabaabaabbbbbbbabaabab matches rule 0
+354 babbaaaaaaababbabaabaaaaababaaabbaabaabababababaaaaaabaabbaabbba matches rule 0
+355 bbabbaabbaaabaaabaabaabbaabbabab no match.
+356 babbaaabaaabaaaabaaabbbbaababaaababbbbaa matches rule 0
+357 abbaaaaababbbbbaabbaabaa matches rule 0
+358 babbabababaaaabbbbbabaaa matches rule 0
+359 abaaabaabbaaabbaaaabaabbaabbbabaaaaababa matches rule 0
+360 bbbbabbbabbaabbabaaabbbaabbababbbabbbaabaabbababaabbabaabbabbbaaabaaabbbbbbabbaa no match.
+361 aababbabbbabaababbabaaab no match.
+362 baabbbbabbaababaaabababbaaabbabbaaabaabbaaabbaaabbabbbbbabbbbaaa matches rule 0
+363 ababababababaaaabbbbabba matches rule 0
+364 aabbbaaaaaababbbbbbaabaaabbbabababbaabbbaaaaabaa matches rule 0
+365 bababaabbabbaaabbbbbbaba matches rule 0
+366 abaaaabbbababbbbabaaabaaabbaaaab matches rule 0
+367 babbababbaabbaabaaababaabaaabbaaaabbaaabbbababbbbabbbbaa matches rule 0
+368 aaaabbababbbaabbbababbbbaaababbbabbaabab matches rule 0
+369 bbaaaaaababbbbbaaabbbbbbabbbaaababaabababaaaaaab matches rule 0
+370 abaaabbaaababbabbbbbbaaaababaaaaaabbaaab matches rule 0
+371 aaababbabbbaabaabababbaabbabbbababbaaaabbaaaaaabaaaaabbbbabbaabb no match.
+372 bababbaaababbaaababbabaaaababbba matches rule 0
+373 baabaabaabaaabaaaabbbaabaaaabaaabaaabbab matches rule 0
+374 aaaaaabbabbababbbbaabaab matches rule 0
+375 baabaababbbbaaaababbabab no match.
+376 aaaaaabbaaaabbaaaaaaaababaaaabaabbababbb matches rule 0
+377 bbabaaababaaaabaababbbbbabaabbba matches rule 0
+378 aaaababbbabaaababbbbaaba matches rule 0
+379 babbaaabbaabbaabbbbbababbabaabaaabbbbaabaabbaaba matches rule 0
+321
+
+real	11m13.179s
+user	11m6.933s
+sys	0m2.956s
