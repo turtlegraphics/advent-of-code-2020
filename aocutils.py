@@ -154,28 +154,33 @@ class Grid:
     def __iter__(self):
         return iter(self.raster)
 
-    def _neighbors(self,p,dirs):
-        """Return a list of valid neighbors of p in dirs directions."""
+    def _neighbors(self, p, dirs, validate):
+        """Return a list of neighbors of p in dirs directions.
+        * Returns only neighbors present in the grid if validate==True
+        * Returns all possible neighbors if validate==False
+        """
         n = []
         for d in dirs:
             q = p + Point(d)
-            if q in self:
+            if (not validate) or q in self:
                 n.append(q)
         return n
 
     _dirs = [(1,0),(-1,0),(0,1),(0,-1),
              (1,1),(-1,1),(1,-1),(-1,-1)]
 
-    def neighbors(self,p,diagonal = False):
+    def neighbors(self, p, diagonal = False, validate = True):
         """
-        Return a list of valid neighbors of p.
+        * Returns only neighbors present in the grid if validate==True
+        * Returns all possible neighbors if validate==False
+
         Uses the four cardinal directions, unless diagonal is True,
         in which case it uses the eight grid neighbors
         """
         x,y = p
         if diagonal:
-            return self._neighbors(Point((x,y)),self._dirs)
-        return self._neighbors(Point((x,y)),self._dirs[:4])
+            return self._neighbors(Point((x,y)),self._dirs,validate)
+        return self._neighbors(Point((x,y)),self._dirs[:4],validate)
 
     def display(self):
         for y in range(self.ymax,self.ymin-1,-1):
@@ -192,12 +197,14 @@ class HexGrid(Grid):
     Class representing a hexagonal grid.
     See HexPoint class for details of coordinates
     """
-    def neighbors(self,p):
+    def neighbors(self, p, validate=True):
         """
-        Return a list of valid neighbors of p
+        * Returns only neighbors present in the grid if validate==True
+        * Returns all possible neighbors if validate==False
+
         p must be a HexPoint
         """
-        return self._neighbors(p,p.DIRECTIONS.values())
+        return self._neighbors(p,p.DIRECTIONS.values(),validate)
 
     def display(self):
         for y in range(self.ymax,self.ymin-1,-1):
@@ -345,3 +352,4 @@ if __name__ == '__main__':
 
     assert(p.dist(q) == 3)
     assert(len(h.neighbors(p)) == 6)
+    assert(len(h.neighbors(p,validate=False)) == 6)
