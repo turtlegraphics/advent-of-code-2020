@@ -56,7 +56,7 @@ def art_move():
     blacks = {}
     for p in floor:
         if floor[p] == 'b':
-            for n in floor.neighbors(aoc.HexPoint(p)):
+            for n in floor.neighbors(aoc.HexPoint(p),validate=False):
                 n = (n.x,n.y)
                 if n not in blacks:
                     blacks[n] = 1
@@ -83,8 +83,4 @@ print 'part 1:',count_black()
 for i in range(100):
     art_move()
 
-print count_black()
-
-
-
-
+print 'part 2:',count_black()
